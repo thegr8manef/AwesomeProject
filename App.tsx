@@ -5,21 +5,7 @@ import {
   Text,
 
 } from 'react-native';
-import { NativeEventEmitter, NativeModules } from 'react-native';
-
 function App(): JSX.Element {
-
-const YourReactNativeModule = NativeModules.YourReactNativeModule;
-
-// Subscribe to the event
-const devicePlatformEmitter = new NativeEventEmitter(YourReactNativeModule);
-
-devicePlatformEmitter.addListener('onDevicePlatform', (devicePlatformInfo) => {
-    console.log('Device Platform:', devicePlatformInfo);
-});
-
-// Call the method
-YourReactNativeModule.getDevicePlatform();
 
 
   return (

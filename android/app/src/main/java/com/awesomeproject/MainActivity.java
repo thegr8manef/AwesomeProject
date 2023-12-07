@@ -15,8 +15,8 @@ public class MainActivity extends ReactActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // DeviceInfo deviceInfo = new DeviceInfo();
-        // Log.w("deviceInfo", deviceInfo.getDeviceInfo());
+        DeviceInfo deviceInfo = new DeviceInfo();
+        Log.w("deviceInfo", deviceInfo.getDeviceInfo());
     }
 
     /**
